@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+}
+
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    background-image: radial-gradient(circle at 0% 0%, hsla(295.99999999999994, 77%, 74%, 0.35) 3.1210986267166043%, transparent 40%), radial-gradient(circle at 20% 0%, hsla(236.91176470588243, 77%, 74%, 0.35) 3.1210986267166043%, transparent 40%), radial-gradient(circle at 40% 0%, hsla(186.61764705882354, 77%, 74%, 0.35) 3.1210986267166043%, transparent 40%), radial-gradient(circle at 60% 0%, hsla(127.0588235294118, 77%, 74%, 0.35) 3.1210986267166043%, transparent 40%), radial-gradient(circle at 80% 0%, hsla(62.20588235294117, 77%, 74%, 0.35) 3.1210986267166043%, transparent 40%), radial-gradient(circle at 100% 0%, hsla(23.823529411764703, 77%, 74%, 0.35) 3%, transparent 40%);
+    background-blend-mode: normal, normal, normal, normal, normal, normal;
+    flex-direction: column;
+    text-align: center;
+}
+
+.title {
+    padding: 20px;
+    font-family: "Lexend Giga", serif;
+    color: rgb(36, 36, 36);
+}
+
+
+.screen {
+    background: white;
+    width: 260px;
+    height: 475px;
+    border-radius: 25px;
+    border: 0.1px solid rgba(78, 78, 78, 0.679);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+
+.phone {
+    background-color: rgb(0, 0, 0);
+    width: 270px;
+    height: 500px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-family: "Montserrat", serif;
+    box-shadow: rgba(12, 12, 12, 0.61) 0px 0px 0px 3px;
+
+}
+
+.camera {
+    width: 6px;
+    height: 6px;
+    top: 5px;
+    border-radius: 50%;
+    border: 5px solid rgb(0, 0, 0);
+    background-color: rgb(238, 238, 238);
+    position: absolute;
+
+}
+
+.app {
+    padding: 20px 0 0 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+}
+
+.app input {
+    width: 85%;
+    height: 25px;
+    border-radius: 10px;
+    border: none;
+    margin: 10px 5px;
+    padding: 10px;
+    font-size: 20px;
+    font-family: "Montserrat", serif;
+    text-align: center;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 10px;
+}
+
+.buttons button {
+    font-family: "Lexend Giga", serif;
+    border-radius: 15px;
+    border: 2px solid rgba(135, 135, 135, 0.393);
+    background-color: rgba(207, 207, 207, 0.764);
+    color: rgb(125, 125, 125);
+    ;
+    padding: 10px;
+    width: 90px;
+}
+
+.buttons button:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+#results-div {
+    width: 100%;
+    height: 400px;
+    overflow-y: auto;
+}
+
+.list {
+    padding: 10px;
+    list-style: none;
+    background-color: rgba(183, 181, 181, 0.193);
+    margin: 5px;
+    border-radius: 10px;
+
+}
+
+.error {
+    color: rgb(249, 249, 249);
+    background: rgba(255, 0, 0, 0.57);
+}
+
+.correct {
+    color: rgb(5, 5, 5);
+    background: rgba(30, 232, 151, 0.911);
+}
